@@ -1,0 +1,92 @@
+/* ===== Global ===== */
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans';
+}
+
+/* Frosted glass */
+.glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(8px); }
+
+/* Optional overlay grid */
+.grid-overlay::before {
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(circle at center, black 0%, transparent 65%);
+  pointer-events: none;
+}
+
+/* Gallery thumbs: active state */
+#gallery-thumbs .thumb.active img {
+  filter: saturate(1.05) contrast(1.05);
+}
+
+/* Mobile timeline reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .5s ease, transform .6s ease;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero logo subtle shadow */
+.hero-logo { filter: drop-shadow(0 6px 20px rgba(16,185,129,.18)); }
+
+/* ===== Aurora hero background (lightweight, CSS-only) ===== */
+.hero-aurora{position:relative;overflow:hidden;isolation:isolate;}
+.hero-aurora::before{
+  content:"";position:absolute;inset:-20% -20% auto -20%;height:60%;
+  background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(16,185,129,.18), transparent 60%),
+    radial-gradient(900px 450px at 82% 8%,  rgba(59,130,246,.12),  transparent 60%),
+    radial-gradient(700px 350px at 50% -5%, rgba(168,85,247,.10), transparent 60%);
+  filter:blur(20px);mix-blend:screen;pointer-events:none;z-index:0;
+}
+.hero-aurora::after{
+  content:"";position:absolute;inset:-10% -10% auto -10%;height:68%;
+  background:conic-gradient(from 210deg at 50% 28%,
+    rgba(16,185,129,.25),
+    rgba(59,130,246,.15),
+    rgba(244,63,94,.12),
+    rgba(16,185,129,.25));
+  filter:blur(60px) saturate(115%);opacity:.55;mix-blend:screen;
+  animation:aurora-drift 24s ease-in-out infinite alternate;
+  pointer-events:none;z-index:0;
+}
+@keyframes aurora-drift{
+  from{transform:translateY(0) translateX(0);}
+  to  {transform:translateY(12px) translateX(-10px);}
+}
+
+/* subtle stars (very cheap to render) */
+.hero-stars{
+  position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.35;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,.14) 50%, transparent 51%),
+    radial-gradient(1px 1px at 65% 20%, rgba(255,255,255,.12) 50%, transparent 51%),
+    radial-gradient(1px 1px at 42% 72%, rgba(255,255,255,.10) 50%, transparent 51%),
+    radial-gradient(1px 1px at 82% 60%, rgba(255,255,255,.12) 50%, transparent 51%),
+    radial-gradient(1px 1px at 12% 62%, rgba(255,255,255,.10) 50%, transparent 51%);
+  background-repeat:no-repeat;
+}
+
+/* headline polish */
+.hero-title{letter-spacing:-.01em;}
+.hero-kicker{letter-spacing:.02em}
+
+/* highlight with gradient text */
+.text-gradient{
+  background-image:linear-gradient(90deg,#34d399 0%,#5eead4 50%,#34d399 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+
+/* reduce motion accessibility */
+@media (prefers-reduced-motion: reduce){
+  .hero-aurora::after{animation:none;}
+}

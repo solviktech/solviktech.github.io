@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solviktech — Cross-Border Trade · Flexible Supply Chain · MEA Landing</title>
+  <meta name="description" content="Solviktech connects China's innovation and supply chains with Middle Eastern markets — secure, efficient, sustainable." />
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind: 先配置再加载，确保扩展主题生效 -->
+  <script>
+    window.tailwind = {
+      config: {
+        theme: {
+          extend: {
+            colors: { brand: { DEFAULT: '#10b981', dark: '#059669' }, ink: '#0a0a0a' },
+            boxShadow: { glow: '0 0 0 1px rgba(255,255,255,0.08), 0 10px 30px rgba(16,185,129,0.15)' }
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-zinc-950 text-zinc-100">
+
+  <!-- Header / Nav -->
+  <header class="fixed inset-x-0 top-0 z-50">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mt-4 mb-3 flex h-14 items-center justify-between rounded-2xl glass px-4 ring-1 ring-white/10 shadow-glow">
+        <a href="index.html" class="flex items-center gap-2 font-semibold tracking-wide">
+          <span class="inline-block h-2 w-2 rounded-full bg-brand"></span>
+          <span>Solviktech</span>
+        </a>
+        <ul class="hidden items-center gap-6 text-sm sm:flex">
+          <li><a href="index.html#positioning" class="hover:text-brand">Positioning</a></li>
+          <li><a href="index.html#services" class="hover:text-brand">Services</a></li>
+          <li><a href="index.html#cases" class="hover:text-brand">Cases</a></li>
+          <li><a href="index.html#process" class="hover:text-brand">Process</a></li>
+          <li><a href="index.html#values" class="hover:text-brand">Values</a></li>
+          <li><a href="index.html#contact" class="hover:text-brand">Contact</a></li>
+        </ul>
+        <div class="hidden sm:flex">
+          <a href="https://wa.me/966548445194" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-sm font-medium hover:bg-white/20">WhatsApp</a>
+        </div>
+        <button id="menuBtn" class="sm:hidden inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/20 bg-white/10 hover:bg-white/20" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"/></svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="hidden overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-3 text-sm backdrop-blur">
+        <a href="index.html#positioning" class="block rounded-lg px-3 py-2 hover:bg-white/10">Positioning</a>
+        <a href="index.html#services" class="block rounded-lg px-3 py-2 hover:bg-white/10">Services</a>
+        <a href="index.html#cases" class="block rounded-lg px-3 py-2 hover:bg-white/10">Cases</a>
+        <a href="index.html#process" class="block rounded-lg px-3 py-2 hover:bg-white/10">Process</a>
+        <a href="index.html#values" class="block rounded-lg px-3 py-2 hover:bg-white/10">Values</a>
+        <a href="index.html#contact" class="block rounded-lg px-3 py-2 hover:bg-white/10">Contact</a>
+        <a href="https://wa.me/966548445194" target="_blank" rel="noopener" class="mt-2 block rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-center font-medium">WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+<!-- HERO (Aurora) -->
+<section id="hero" class="hero-aurora relative pt-28 sm:pt-32">
+  <!-- 星点层 -->
+  <div class="hero-stars"></div>
+
+  <!-- 内容 -->
+  <div class="relative z-10 mx-auto max-w-4xl px-5 flex flex-col items-center text-center">
+    <!-- Logo -->
+    <img src="/assets/images/logo.jpg" alt="Solviktech Logo"
+         class="h-20 md:h-24 object-contain mb-5 drop-shadow-[0_6px_18px_rgba(16,185,129,.15)]">
+
+   <!-- 标题 -->
+<h1 class="hero-title text-[clamp(2rem,6vw,3.5rem)] md:text-[clamp(2.75rem,5vw,3.75rem)] leading-[1.25] font-extrabold">
+  Connecting China and the<br>
+  Middle East Through<br>
+  <span class="text-gradient">Innovation &amp; Trust</span>
+</h1>
+
+<!-- 副标题 -->
+<p class="hero-kicker mt-6 text-base md:text-lg text-zinc-300 max-w-2xl leading-relaxed">
+  Cross-border trade · intelligent flexible supply chain · localization consulting.
+  Secure, efficient, sustainable.
+</p>
+
+    <!-- 按钮组 -->
+    <div class="mt-7 flex gap-4">
+      <a href="#contact"
+         class="px-6 py-3 rounded-2xl bg-white/10 hover:bg-white/15 text-white transition ring-1 ring-white/10">
+        Start a Project
+      </a>
+      <a href="#services"
+         class="px-6 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-600 text-white transition shadow-glow">
+        Explore Services
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- 1) Positioning -->
+  <section id="positioning" class="relative scroll-mt-24">
+    <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16">
+      <h2 class="text-2xl font-semibold sm:text-3xl text-center">Positioning</h2>
+      <p class="mx-auto mt-3 max-w-3xl text-center text-zinc-300">
+        Solviktech integrates China's advanced technologies, premium products, and agile supply chains with Middle Eastern market demands and cultural context — delivering secure, efficient, and sustainable solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Showcase Gallery -->
+  <section id="showcase" class="relative mt-10">
+    <div class="mx-auto max-w-7xl px-5">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-center"></h2>
+      <p class="mt-2 text-center text-sm text-zinc-400"></p>
+
+      <!-- Main Carousel -->
+      <div class="relative mt-6 rounded-3xl overflow-hidden ring-1 ring-white/10 bg-white/5">
+        <div class="aspect-[16/9] w-full overflow-hidden" id="gallery-viewport">
+          <div id="gallery-track" class="flex h-full w-full transition-transform duration-500 ease-out">
+            <div class="min-w-full h-full"><img src="assets/images/gallery/slide-1.jpg" loading="lazy" decoding="async" alt="Showcase 1" class="w-full h-full object-cover"/></div>
+            <div class="min-w-full h-full"><img src="assets/images/gallery/slide-2.jpg" loading="lazy" decoding="async" alt="Showcase 2" class="w-full h-full object-cover"/></div>
+            <div class="min-w-full h-full"><img src="assets/images/gallery/slide-3.jpg" loading="lazy" decoding="async" alt="Showcase 3" class="w-full h-full object-cover"/></div>
+            <div class="min-w-full h-full"><img src="assets/images/gallery/slide-4.jpg" loading="lazy" decoding="async" alt="Showcase 4" class="w-full h-full object-cover"/></div>
+            <div class="min-w-full h-full"><img src="assets/images/gallery/slide-5.jpg" loading="lazy" decoding="async" alt="Showcase 5" class="w-full h-full object-cover"/></div>
+            <div class="min-w-full h-full"><img src="assets/images/gallery/slide-6.jpg" loading="lazy" decoding="async" alt="Showcase 6" class="w-full h-full object-cover"/></div>
+            <div class="min-w-full h-full"><img src="assets/images/gallery/slide-7.jpg" loading="lazy" decoding="async" alt="Showcase 7" class="w-full h-full object-cover"/></div>
+            <div class="min-w-full h-full"><img src="assets/images/gallery/slide-8.jpg" loading="lazy" decoding="async" alt="Showcase 8" class="w-full h-full object-cover"/></div>
+            <div class="min-w-full h-full"><img src="assets/images/gallery/slide-9.jpg" loading="lazy" decoding="async" alt="Showcase 9" class="w-full h-full object-cover"/></div>
+            <div class="min-w-full h-full"><img src="assets/images/gallery/slide-10.jpg" loading="lazy" decoding="async" alt="Showcase 10" class="w-full h-full object-cover"/></div>
+            <div class="min-w-full h-full"><img src="assets/images/gallery/slide-11.jpg" loading="lazy" decoding="async" alt="Showcase 11" class="w-full h-full object-cover"/></div>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button id="gallery-prev" class="group absolute left-3 top-1/2 -translate-y-1/2 size-10 sm:size-11 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur flex items-center justify-center ring-1 ring-white/20 transition">
+          <span class="sr-only">Previous</span>
+          <svg viewBox="0 0 24 24" class="w-5 h-5 text-white/80 group-hover:text-white"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button id="gallery-next" class="group absolute right-3 top-1/2 -translate-y-1/2 size-10 sm:size-11 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur flex items-center justify-center ring-1 ring-white/20 transition">
+          <span class="sr-only">Next</span>
+          <svg viewBox="0 0 24 24" class="w-5 h-5 text-white/80 group-hover:text-white"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <!-- Thumbs -->
+      <div id="gallery-thumbs" class="mt-4 flex gap-2 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none]" style="scrollbar-width:none;">
+        <button class="thumb active relative overflow-hidden rounded-xl ring-1 ring-white/10"><img src="assets/images/gallery/slide-1.jpg" loading="lazy" decoding="async" alt="Thumb 1" class="h-16 w-28 object-cover"/></button>
+        <button class="thumb relative overflow-hidden rounded-xl ring-1 ring-white/10"><img src="assets/images/gallery/slide-2.jpg" loading="lazy" decoding="async" alt="Thumb 2" class="h-16 w-28 object-cover"/></button>
+        <button class="thumb relative overflow-hidden rounded-xl ring-1 ring-white/10"><img src="assets/images/gallery/slide-3.jpg" loading="lazy" decoding="async" alt="Thumb 3" class="h-16 w-28 object-cover"/></button>
+        <button class="thumb relative overflow-hidden rounded-xl ring-1 ring-white/10"><img src="assets/images/gallery/slide-4.jpg" loading="lazy" decoding="async" alt="Thumb 4" class="h-16 w-28 object-cover"/></button>
+        <button class="thumb relative overflow-hidden rounded-xl ring-1 ring-white/10"><img src="assets/images/gallery/slide-5.jpg" loading="lazy" decoding="async" alt="Thumb 5" class="h-16 w-28 object-cover"/></button>
+        <button class="thumb relative overflow-hidden rounded-xl ring-1 ring-white/10"><img src="assets/images/gallery/slide-6.jpg" loading="lazy" decoding="async" alt="Thumb 6" class="h-16 w-28 object-cover"/></button>
+        <button class="thumb relative overflow-hidden rounded-xl ring-1 ring-white/10"><img src="assets/images/gallery/slide-7.jpg" loading="lazy" decoding="async" alt="Thumb 7" class="h-16 w-28 object-cover"/></button>
+        <button class="thumb relative overflow-hidden rounded-xl ring-1 ring-white/10"><img src="assets/images/gallery/slide-8.jpg" loading="lazy" decoding="async" alt="Thumb 8" class="h-16 w-28 object-cover"/></button>
+        <button class="thumb relative overflow-hidden rounded-xl ring-1 ring-white/10"><img src="assets/images/gallery/slide-9.jpg" loading="lazy" decoding="async" alt="Thumb 9" class="h-16 w-28 object-cover"/></button>
+        <button class="thumb relative overflow-hidden rounded-xl ring-1 ring-white/10"><img src="assets/images/gallery/slide-10.jpg" loading="lazy" decoding="async" alt="Thumb 10" class="h-16 w-28 object-cover"/></button>
+        <button class="thumb relative overflow-hidden rounded-xl ring-1 ring-white/10"><img src="assets/images/gallery/slide-11.jpg" loading="lazy" decoding="async" alt="Thumb 11" class="h-16 w-28 object-cover"/></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2) Core Services -->
+  <section id="services" class="relative scroll-mt-24">
+    <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16">
+      <h2 class="text-2xl font-semibold sm:text-3xl text-center">Core Service Modules</h2>
+      <p class="mx-auto mt-2 max-w-2xl text-center text-zinc-400"></p>
+
+      <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <!-- Card 1 -->
+        <a href="services/tech-import.html" class="group rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition shadow-glow">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Signature Tech Import</h3>
+            <span class="text-xs text-zinc-400 group-hover:text-brand">Open →</span>
+          </div>
+          <p class="mt-1 text-sm text-zinc-300">High-end smart devices, central kitchen & F&amp;B equipment, EdTech, New Energy, AI terminals.</p>
+          <ul class="mt-3 text-xs text-zinc-400 list-disc pl-4 space-y-1">
+            <li>Factory-direct sourcing, reduced risk</li>
+            <li>Multi-language, multi-scenario readiness</li>
+          </ul>
+          <img src="assets/images/Signature Tech Import.jpg" loading="lazy" decoding="async" alt="Signature Tech Import" class="mt-4 h-36 w-full rounded-xl object-cover ring-1 ring-white/10" />
+        </a>
+
+        <!-- Card 2 -->
+        <a href="services/flexible-supply-chain.html" class="group rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition shadow-glow">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Intelligent Flexible Supply Chain</h3>
+            <span class="text-xs text-zinc-400 group-hover:text-brand">Open →</span>
+          </div>
+          <p class="mt-1 text-sm text-zinc-300">Custom manufacturing, CN↔KSA logistics, e-commerce enablement.</p>
+          <ul class="mt-3 text-xs text-zinc-400 list-disc pl-4 space-y-1">
+            <li>Fast response, tailored configurations</li>
+            <li>Visual supply chain map (module-ready)</li>
+          </ul>
+          <img src="assets/images/Intelligent Flexible Supply Chain.jpg" loading="lazy" decoding="async" alt="Intelligent Flexible Supply Chain" class="mt-4 h-36 w-full rounded-xl object-cover ring-1 ring-white/10" />
+        </a>
+
+        <!-- Card 3 -->
+        <a href="services/localization-consulting.html" class="group rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition shadow-glow">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Global Localization Consulting</h3>
+            <span class="text-xs text-zinc-400 group-hover:text-brand">Open →</span>
+          </div>
+          <p class="mt-1 text-sm text-zinc-300">Culture &amp; tourism marketing, F&amp;B localization, product adaptation &amp; GTM.</p>
+          <ul class="mt-3 text-xs text-zinc-400 list-disc pl-4 space-y-1">
+            <li>Cross-cultural team &amp; execution</li>
+            <li>Compliance-ready labeling &amp; language</li>
+          </ul>
+          <img src="assets/images/Global Localization Consulting.jpg" loading="lazy" decoding="async" alt="Global Localization Consulting" class="mt-4 h-36 w-full rounded-xl object-cover ring-1 ring-white/10" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="mx-auto max-w-7xl px-5"><div class="my-10 border-t border-white/10"></div></div>
+
+  <!-- 3) Selected Cases -->
+  <section id="cases" class="relative scroll-mt-24 bg-zinc-900/60">
+    <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16">
+      <h2 class="text-2xl font-semibold sm:text-3xl text-center">Selected Cases</h2>
+
+      <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <!-- Umrah -->
+        <a href="https://dragonumrah.com" target="_blank" class="block">
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition">
+            <h3 class="font-semibold">Dragon Umrah Services</h3>
+            <p class="mt-1 text-sm text-zinc-300">Transport, hotels, and Localized B for Central &amp; Southeast Asian markets.</p>
+            <div class="mt-3 h-40 rounded-xl overflow-hidden ring-1 ring-white/10">
+              <img src="assets/images/Umrah.jpg" alt="Dragon Umrah Services" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="mt-3 text-xs text-brand">Open →</div>
+          </article>
+        </a>
+
+        <!-- Central Kitchen -->
+        <a href="https://maps.app.goo.gl/B5xF8RUxcJC2cEpo8?g_st=ipc" target="_blank" class="block">
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition">
+            <h3 class="font-semibold">Central Kitchen Solution</h3>
+            <p class="mt-1 text-sm text-zinc-300">Baking, refrigeration, preprocessing for large events &amp; hospitality in KSA.</p>
+            <div class="mt-3 h-40 rounded-xl overflow-hidden ring-1 ring-white/10">
+              <img src="assets/images/central-kitchen.jpg" alt="Central Kitchen Solution" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="mt-3 text-xs text-brand">Open →</div>
+          </article>
+        </a>
+
+        <!-- Noon Plush -->
+        <a href="https://answer.aliendl.com" target="_blank" class="block">
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition">
+            <h3 class="font-semibold">Noon Plush IP Project</h3>
+            <p class="mt-1 text-sm text-zinc-300">Original plush IP with outfit swaps tailored for GCC eCommerce.</p>
+            <div class="mt-3 h-40 rounded-xl overflow-hidden ring-1 ring-white/10">
+              <img src="assets/images/toy.jpg" alt="Noon Plush IP Project" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="mt-3 text-xs text-brand">Open →</div>
+          </article>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) Service Process -->
+  <section id="process" class="relative scroll-mt-24">
+    <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16">
+      <h2 class="text-2xl font-semibold sm:text-3xl text-center mb-10">Service Process</h2>
+
+      <!-- Desktop (md+) -->
+      <div class="hidden md:flex items-center justify-between">
+        <!-- step 1 -->
+        <div class="flex-1 px-3">
+          <div class="mx-auto flex flex-col items-center text-center max-w-xs">
+            <div class="flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 text-white mb-3">
+              <svg viewBox="0 0 24 24" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 16V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14l4 4-4-4z"/>
+              </svg>
+            </div>
+            <h3 class="font-medium">Needs</h3>
+            <p class="text-sm text-zinc-400">Scope & timeline</p>
+          </div>
+        </div>
+        <div class="hidden md:block h-0.5 bg-zinc-700 flex-1"></div>
+
+        <!-- step 2 -->
+        <div class="flex-1 px-3">
+          <div class="mx-auto flex flex-col items-center text-center max-w-xs">
+            <div class="flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 text-white mb-3">
+              <svg viewBox="0 0 24 24" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h10M4 18h16"/>
+              </svg>
+            </div>
+            <h3 class="font-medium">Plan</h3>
+            <p class="text-sm text-zinc-400">Sampling & costing</p>
+          </div>
+        </div>
+        <div class="hidden md:block h-0.5 bg-zinc-700 flex-1"></div>
+
+        <!-- step 3 -->
+        <div class="flex-1 px-3">
+          <div class="mx-auto flex flex-col items-center text-center max-w-xs">
+            <div class="flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 text-white mb-3">
+              <svg viewBox="0 0 24 24" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 13a5 5 0 0 0 7.07 0l2.12-2.12a5 5 0 0 0-7.07-7.07L10 5m4 6-4 4M7.05 7.05 5 9.1a5 5 0 0 0 7.07 7.07l2.05-2.05"/>
+              </svg>
+            </div>
+            <h3 class="font-medium">Supply</h3>
+            <p class="text-sm text-zinc-400">CN ↔ KSA logistics</p>
+          </div>
+        </div>
+        <div class="hidden md:block h-0.5 bg-zinc-700 flex-1"></div>
+
+        <!-- step 4 -->
+        <div class="flex-1 px-3">
+          <div class="mx-auto flex flex-col items-center text-center max-w-xs">
+            <div class="flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 text-white mb-3">
+              <svg viewBox="0 0 24 24" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0-6 6m6-6 6 6"/>
+              </svg>
+            </div>
+            <h3 class="font-medium">Delivery</h3>
+            <p class="text-sm text-zinc-400">Customs & landing</p>
+          </div>
+        </div>
+        <div class="hidden md:block h-0.5 bg-zinc-700 flex-1"></div>
+
+        <!-- step 5 -->
+        <div class="flex-1 px-3">
+          <div class="mx-auto flex flex-col items-center text-center max-w-xs">
+            <div class="flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 text-white mb-3">
+              <svg viewBox="0 0 24 24" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18.36 5.64a9 9 0 0 1 0 12.72M15.54 8.46a5 5 0 0 1 0 7.08M5 12h.01"/>
+              </svg>
+            </div>
+            <h3 class="font-medium">Support</h3>
+            <p class="text-sm text-zinc-400">After‑sales & local team</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile (<md): 交错时间轴 + 入场动效 -->
+      <ol class="md:hidden relative mt-2">
+        <div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] bg-zinc-700/60"></div>
+
+        <li class="reveal flex items-start gap-3 mb-8">
+          <div class="w-1/2 pr-4 text-right">
+            <h3 class="font-medium">Needs</h3>
+            <p class="text-sm text-zinc-400">Scope & timeline</p>
+          </div>
+          <div class="shrink-0 -mt-1">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500 text-white ring-1 ring-white/10">
+              <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 16V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14l4 4-4-4z"/>
+              </svg>
+            </span>
+          </div>
+          <div class="w-1/2"></div>
+        </li>
+
+        <li class="reveal flex items-start gap-3 mb-8">
+          <div class="w-1/2"></div>
+          <div class="shrink-0 -mt-1">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500 text-white ring-1 ring-white/10">
+              <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h10M4 18h16"/>
+              </svg>
+            </span>
+          </div>
+          <div class="w-1/2 pl-4">
+            <h3 class="font-medium">Plan</h3>
+            <p class="text-sm text-zinc-400">Sampling & costing</p>
+          </div>
+        </li>
+
+        <li class="reveal flex items-start gap-3 mb-8">
+          <div class="w-1/2 pr-4 text-right">
+            <h3 class="font-medium">Supply</h3>
+            <p class="text-sm text-zinc-400">CN ↔ KSA logistics</p>
+          </div>
+          <div class="shrink-0 -mt-1">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500 text-white ring-1 ring-white/10">
+              <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 13a5 5 0 0 0 7.07 0l2.12-2.12a5 5 0 0 0-7.07-7.07L10 5m4 6-4 4M7.05 7.05 5 9.1a5 5 0 0 0 7.07 7.07l2.05-2.05"/>
+              </svg>
+            </span>
+          </div>
+          <div class="w-1/2"></div>
+        </li>
+
+        <li class="reveal flex items-start gap-3 mb-8">
+          <div class="w-1/2"></div>
+          <div class="shrink-0 -mt-1">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500 text-white ring-1 ring-white/10">
+              <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0-6 6m6-6 6 6"/>
+              </svg>
+            </span>
+          </div>
+          <div class="w-1/2 pl-4">
+            <h3 class="font-medium">Delivery</h3>
+            <p class="text-sm text-zinc-400">Customs & landing</p>
+          </div>
+        </li>
+
+        <li class="reveal flex items-start gap-3">
+          <div class="w-1/2 pr-4 text-right">
+            <h3 class="font-medium">Support</h3>
+            <p class="text-sm text-zinc-400">After‑sales & local team</p>
+          </div>
+          <div class="shrink-0 -mt-1">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500 text-white ring-1 ring-white/10">
+              <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18.36 5.64a9 9 0 0 1 0 12.72M15.54 8.46a5 5 0 0 1 0 7.08M5 12h.01"/>
+              </svg>
+            </span>
+          </div>
+          <div class="w-1/2"></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5) Values -->
+  <section id="values" class="relative scroll-mt-24 bg-zinc-900/60">
+    <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16">
+      <h2 class="text-2xl font-semibold sm:text-3xl text-center">Brand Values & Vision</h2>
+      <ul class="mx-auto mt-6 grid max-w-3xl grid-cols-1 gap-3">
+        <li class="rounded-2xl border border-white/10 bg-white/5 p-5"><strong>Integrity</strong> — trust as the foundation of long-term CN–ME cooperation.</li>
+        <li class="rounded-2xl border border-white/10 bg-white/5 p-5"><strong>Innovation</strong> — latest Chinese technologies & supply chain models.</li>
+        <li class="rounded-2xl border border-white/10 bg-white/5 p-5"><strong>Cross-Cultural Understanding</strong> — multilingual, multicultural team.</li>
+        <li class="rounded-2xl border border-white/10 bg-white/5 p-5"><strong>Sustainability</strong> — environmental, halal, social responsibility.</li>
+      </ul>
+      <p class="mx-auto mt-6 max-w-3xl text-center text-zinc-300 italic">We believe every partnership should build trust, every service should create value.</p>
+    </div>
+  </section>
+
+<!-- 6) CONTACT — universal, email-ready form -->
+<section id="contact" class="relative scroll-mt-24">
+  <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16">
+    <div class="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-6 sm:p-8 backdrop-blur shadow-glow">
+      <h2 class="text-2xl font-semibold sm:text-3xl text-center">Contact</h2>
+      <p class="mx-auto mt-2 max-w-2xl text-zinc-300 text-center">
+        Tell us what you need — even if it’s not listed on this site. We’ll coordinate suppliers and propose a professional plan.
+      </p>
+
+      <!-- FORM -->
+      <form
+        action="https://formsubmit.co/contact@solviktech.com"
+        method="POST"
+        enctype="multipart/form-data"
+        class="mt-8 grid grid-cols-1 gap-4"
+        id="universalContactForm"
+      >
+        <!-- FormSubmit controls -->
+        <input type="hidden" name="_subject" value="New inquiry — Solviktech universal contact form" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <!-- 成功后跳转页（可换成你自己的感谢页） -->
+        <input type="hidden" name="_next" value="https://solviktech.com/#contact" />
+        <!-- 简易反垃圾 -->
+        <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
+
+        <!-- 1. 基本信息 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">First name*</label>
+            <input name="first_name" required class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand" placeholder="e.g., Ahmed" />
+          </div>
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Last name*</label>
+            <input name="last_name" required class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand" placeholder="e.g., Al‑Harbi" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Company / Organization</label>
+            <input name="company" class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand" placeholder="Optional" />
+          </div>
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Role / Title</label>
+            <input name="role" class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand" placeholder="e.g., Procurement Manager" />
+          </div>
+        </div>
+
+        <!-- 2. 地区 & 语言 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Country / Region*</label>
+            <select name="country" required class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand">
+              <option value="" disabled selected>Select…</option>
+              <option>Saudi Arabia</option>
+              <option>UAE</option>
+              <option>Qatar</option>
+              <option>Kuwait</option>
+              <option>Oman</option>
+              <option>Bahrain</option>
+              <option>China</option>
+              <option>Malaysia</option>
+              <option>Indonesia</option>
+              <option>Pakistan</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Primary Language*</label>
+            <select name="language" required class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand">
+              <option value="" disabled selected>Select…</option>
+              <option>English</option>
+              <option>Arabic</option>
+              <option>Chinese</option>
+              <option>Urdu</option>
+              <option>Malay</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 3. 联系方式偏好 -->
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Email*</label>
+            <input id="field_email" type="email" name="email" required class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand" placeholder="name@company.com" />
+          </div>
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">WhatsApp</label>
+            <input id="field_whatsapp" name="whatsapp" class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand" placeholder="+966 5x xxx xxxx" />
+          </div>
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Preferred contact*</label>
+            <select id="field_preferred" name="preferred_contact" required class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand">
+              <option value="" disabled selected>Select…</option>
+              <option>Email</option>
+              <option>WhatsApp</option>
+              <option>Either</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 4. 需求类型（单选） + 具体类别（多选） -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Interest Category*</label>
+            <select id="interestCategory" name="interest_category" required class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand">
+              <option value="" disabled selected>Select…</option>
+              <option>Services</option>
+              <option>Equipment</option>
+              <option>Raw Materials</option>
+              <option>Business Consulting</option>
+              <option>Other</option>
+            </select>
+            <input id="interestOther" name="interest_other" class="mt-2 hidden w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand" placeholder="Please specify…" />
+          </div>
+
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Specific Interests (multi‑select)</label>
+            <div class="grid grid-cols-2 gap-2 text-sm">
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="interests[]" value="Central Kitchen & F&B" class="rounded-md"> Central Kitchen & F&B</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="interests[]" value="Solar Energy / New Energy" class="rounded-md"> Solar / New Energy</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="interests[]" value="Electronics / Smart Devices" class="rounded-md"> Smart Devices</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="interests[]" value="Custom Merch & IP" class="rounded-md"> Custom Merch & IP</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="interests[]" value="Logistics & Labeling" class="rounded-md"> Logistics & Labeling</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="interests[]" value="Other" class="rounded-md"> Other</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. 预算 / 时间 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Budget Range (USD)</label>
+            <select name="budget" class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand">
+              <option value="" selected>Undisclosed / TBD</option>
+              <option>&lt; 10,000</option>
+              <option>10,000–50,000</option>
+              <option>50,000–200,000</option>
+              <option>&gt; 200,000</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Timeline</label>
+            <select name="timeline" class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand">
+              <option>ASAP</option>
+              <option>1–4 weeks</option>
+              <option>1–3 months</option>
+              <option>Unsure</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 6. 合规 / 物流 附加信息 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Compliance (optional)</label>
+            <div class="grid grid-cols-2 gap-2 text-sm">
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="compliance[]" value="Halal" class="rounded-md"> Halal</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="compliance[]" value="CE/UL" class="rounded-md"> CE / UL</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="compliance[]" value="Labels & Languages" class="rounded-md"> Labels & Languages</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="compliance[]" value="Other" class="rounded-md"> Other</label>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm text-zinc-300 mb-1">Logistics / Constraints</label>
+            <input name="logistics" class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand" placeholder="Incoterms, temp control, hazmat, etc." />
+          </div>
+        </div>
+
+        <!-- 7. 需求描述 & 附件 -->
+        <div>
+          <label class="block text-sm text-zinc-300 mb-1">Brief your requirements*</label>
+          <textarea name="requirements" required rows="4" class="w-full rounded-xl bg-white/10 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-brand" placeholder="Tell us products/services, specs, quantities, target timeline, destination, constraints…"></textarea>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+          <!-- 附件 / Attachments -->
+<div class="mt-6">
+  <label for="attachments" class="block text-sm text-zinc-300 mb-1">
+    Attachments (PDF/JPG/PNG)
+  </label>
+
+  <!-- 按钮 + 拖拽容器（可点击触发文件选择） -->
+  <div id="dropZone"
+       class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3
+              hover:bg-white/10 transition cursor-pointer">
+    <button id="pickFiles" type="button"
+            class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm
+                   ring-1 ring-white/15 bg-white/10 hover:bg-white/15 text-white">
+      <!-- 回形针图标 -->
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21.44 11.05 12 20.5a6 6 0 1 1-8.49-8.48l10-10a4 4 0 1 1 5.66 5.66L8.34 18.01a2 2 0 1 1-2.83-2.83L15 5.69"/>
+      </svg>
+      Choose files
+    </button>
+    <span id="fileHint" class="text-sm text-zinc-400">PDF/JPG/PNG · up to 10 MB each</span>
+  </div>
+
+  <!-- 真正的文件输入（隐藏） -->
+  <input id="attachments"
+         name="attachments"
+         type="file"
+         class="sr-only"
+         multiple
+         accept=".pdf,.jpg,.jpeg,.png,.webp" />
+
+  <!-- 已选文件列表 / 错误提示 -->
+  <ul id="fileList" class="mt-3 space-y-2 text-sm text-zinc-300" aria-live="polite"></ul>
+</div>
+
+      <!-- 提交（替换整段） -->
+<div class="mt-8 flex justify-center">
+  <button
+    type="submit"
+    class="group relative inline-flex items-center justify-center overflow-hidden rounded-2xl
+           px-8 py-4 text-base font-semibold tracking-wide
+           focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/70
+           focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
+  >
+    <!-- 背景：品牌渐变 + 轻微阴影 -->
+    <span class="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400"></span>
+    <span class="absolute inset-0 rounded-2xl ring-1 ring-white/15 shadow-[0_10px_30px_rgba(16,185,129,.25)]"></span>
+
+    <!-- 文案 + 箭头（保持可读，放在前景层） -->
+    <span class="relative z-10 text-zinc-900">
+      Submit Request
+    </span>
+    <svg class="relative z-10 ml-2 h-5 w-5 text-zinc-900 transition-transform duration-200 group-hover:translate-x-0.5"
+         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/>
+    </svg>
+  </button>
+</div>
+
+<p class="mt-3 text-center text-xs text-zinc-400">
+  Avg. first response in 24–48h.
+</p>
+</div>
+
+        Prefer chat? &nbsp;
+       <div class="flex justify-center gap-4 mt-4">
+  <!-- WhatsApp 按钮 -->
+  <a href="https://wa.me/966548445194" target="_blank" rel="noopener"
+    class="relative inline-flex items-center justify-center overflow-hidden rounded-2xl
+           px-8 py-2 text-base font-semibold tracking-wide text-zinc-900
+           focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900
+           focus-visible:ring-emerald-400/70
+           bg-gradient-to-r from-emerald-500 to-teal-400
+           hover:from-emerald-400 hover:to-teal-300
+           shadow-lg shadow-emerald-500/30 transition">
+    WhatsApp
+  </a>
+
+  <!-- Email 按钮 -->
+  <a href="mailto:contact@solviktech.com"
+    class="relative inline-flex items-center justify-center overflow-hidden rounded-2xl
+           px-8 py-2 text-base font-semibold tracking-wide text-zinc-900
+           focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900
+           focus-visible:ring-emerald-400/70
+           bg-gradient-to-r from-emerald-500 to-teal-400
+           hover:from-emerald-400 hover:to-teal-300
+           shadow-lg shadow-emerald-500/30 transition">
+    Email
+  </a>
+</div>
+
+  <!-- Footer -->
+  <footer class="relative border-t border-white/10 bg-zinc-950/90 py-8 text-center text-sm text-zinc-400 mt-20">
+    <div class="mx-auto max-w-7xl px-5">
+      <p>© 2025 Solviktech. All rights reserved.</p>
+      <p class="mt-1">Connecting China and the Middle East through Innovation &amp; Trust.</p>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js" defer></script>
+
+  <script>
+  (function () {
+    const cat = document.getElementById('interestCategory');
+    const other = document.getElementById('interestOther');
+    if (cat) {
+      cat.addEventListener('change', () => {
+        const show = cat.value === 'Other';
+        other.classList.toggle('hidden', !show);
+        if (show) { other.focus(); }
+        else { other.value = ''; }
+      });
+    }
+
+    // 按偏好校验：若选 WhatsApp，则建议填写 WhatsApp；Email 始终必填（便于回执）
+    const pref = document.getElementById('field_preferred');
+    const wa   = document.getElementById('field_whatsapp');
+    const mail = document.getElementById('field_email');
+
+    function syncHints() {
+      if (!pref) return;
+      if (pref.value === 'WhatsApp') {
+        wa.setAttribute('required', 'required');
+      } else {
+        wa.removeAttribute('required');
+      }
+    }
+    if (pref) pref.addEventListener('change', syncHints);
+    syncHints();
+
+    // 轻量防重复点击
+    const form = document.getElementById('universalContactForm');
+    if (form) {
+      form.addEventListener('submit', () => {
+        const btn = form.querySelector('button[type="submit"]');
+        if (btn) {
+          btn.disabled = true;
+          btn.classList.add('opacity-70');
+          btn.textContent = 'Submitting…';
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>
